@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Semantic Navigation Bar and Images</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-	<nav class="nav-bar">
-		<h2>Heading</h2>
-		<ul>
-			<li><a>Home</a></li>
-			<li><a>About us</a></li>
-			<li><a>Contact us</a></li>
-		</ul>
-	</nav>
-	<div class="img-bar">
-		<div class="img-bar1">
-			<h2>Images 1</h2>
-			<img src="https://picsum.photos/id/123/200/300" alt="Random image" >
-			</div>
-		<div class="img-bar1">
-			<div class="img-bar1">
-			<h2>Images 2</h2>
-			<img  alt="Random image" src="https://picsum.photos/id/124/200/300">
-		<div class="img-bar1">
-			<div class="img-bar1">
-			<h2>Images 3</h2>
-			<img alt="Random image" src="https://picsum.photos/id/125/200/300">
-		</div>
-		</div>
-	</div>
+  <nav class="nav-bar" role="navigation" aria-label="Main navigation">
+    <h2 class="brand">Heading</h2>
+    <ul class="nav-list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About us</a></li>
+      <li><a href="#">Contact us</a></li>
+    </ul>
+  </nav>
 
+  <main>
+    <h2 class="images-heading">3 random images</h2>
 
+    <section class="images" aria-label="Random images">
+      <figure>
+        <img src="https://picsum.photos/id/123/200/300" alt="Random image" />
+      </figure>
+
+      <figure>
+        <img src="https://picsum.photos/id/124/200/300" alt="Random image" />
+      </figure>
+
+      <figure>
+        <img src="https://picsum.photos/id/125/200/300" alt="Random image" />
+      </figure>
+    </section>
+  </main>
 </body>
-
 </html>
